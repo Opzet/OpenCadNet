@@ -17,7 +17,7 @@
     </SccAuxPath>
     <SccProvider>
     </SccProvider>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -165,6 +165,7 @@
     </Compile>
     <Compile Include="Resources\CursorCollection.cs" />
     <Compile Include="Resources\Images.cs" />
+    <Compile Include="Utils\ArcExtension.cs" />
     <Compile Include="Utils\GDIWrapper.cs" />
     <Compile Include="Utils\MenuItemCollection.cs" />
     <Compile Include="Utils\SerializeUtil.cs" />
@@ -212,13 +213,13 @@
     <EmbeddedResource Include="Resources\edittoolimages.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\Repositories\New With DB File\NETDXF\netDxf\netDxf.csproj">
-      <Project>{785380e0-ceb9-4c34-82e5-60d0e33e848e}</Project>
-      <Name>netDxf</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\CommonTools\CommonTools.csproj">
       <Project>{6d83410f-1413-4671-994c-af095c3e5937}</Project>
       <Name>CommonTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\netDxf\netDxf\netDxf.csproj">
+      <Project>{F23DA4DC-584C-41D8-BD49-1783BA9F26DE}</Project>
+      <Name>netDxf</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
